@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>How it Works</title>
-    <link rel="stylesheet" href="about.css">
+    <!-- <link rel="stylesheet" href="static/css/about.css"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
 </head>
 <body>
-    <a href="index1.html"id="home-icon"title="Home">
+  <a href="index1.html"id="home-icon"title="Home">
         <img src="home.png"height="50px" width="50px">
-    </a>
+    </a> 
+   
+
     <section class="how-it-works">
         <h1>How it Works</h1>
         <div class="steps">
