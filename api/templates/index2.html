@@ -38,7 +38,8 @@
     </div>
 
     <script src="{{url_for('static',filename='js/modal.js')}}"></script>
-    <script>document.getElementById("priceForm").addEventListener("submit", function(event) {
+    <script>
+    document.getElementById("priceForm").addEventListener("submit", function(event) {
         event.preventDefault();
 
         const data = {
@@ -48,7 +49,8 @@
             target_price: document.getElementById("target_price").value
         };
 
-        fetch("http://127.0.0.1:5000/start-tracking", {
+        // Updated fetch for live deployment
+        fetch("/start-tracking", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -59,6 +61,6 @@
         .then(data => alert(data.status))
         .catch(error => console.error("Error:", error));
     });
-</script>
+    </script>
 </body>
 </html>
