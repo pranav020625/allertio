@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Price Alert</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style1.css')}}" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-section">
+    <div class="nav">
+      <div class="logo"><span>Alertio</span></div>
+      <div class="links">
+        <a href="{{url_for('home1')}}">Home</a>
+        <a href="{{url_for('index2')}}">Set Alert</a>
+        <a href="{{url_for('about')}}">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    
+    <div class="content">
+      <h2 class="glow-text">Big Savings Coming!</h2>
+      <h1 class="glow">TIME LEFT UNTIL<br><span class="glow2">YOUR PRICE DROPS</span></h1>
+      <a href="{{url_for('index2')}}" class="btn">Set Price Alert</a>
+    </div>
+  </div>
+</body>
+</html>

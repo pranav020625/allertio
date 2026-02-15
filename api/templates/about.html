@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How it Works</title>
+    <!-- <link rel="stylesheet" href="colouring/css/about.css">  -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"> 
+ <!-- <link rel="stylesheet" href="static/css/about.css"> -->
+ <style>
+    
+ </style>
+</head>
+<body>
+  <!-- <a href="index1.html"id="home-icon"title="Home"> -->
+    <a href="{{ url_for('home1') }}" id="home-icon" title="Home">
+
+        <!-- <img src="home.png"height="50px" width="50px"> -->
+        <img src="{{ url_for('static', filename='images/home.png') }}" height="50" width="50">
+
+    </a> 
+   
+
+    <section class="how-it-works">
+        <h1>How it Works</h1>
+        <div class="steps">
+            <div class="step">
+                <img src="{{url_for('static',filename='images/first.png')}}" alt="Add Icon">
+                <h2>1. Add Price Track</h2>
+                <p>It's fast, easy, and free!</p>
+            </div>
+            <div class="step">
+                <img src="{{url_for('static',filename='images/second.png')}}" alt="Shop Icon">
+                <h2>2. Shop like you always do</h2>
+                <p>Click the Price Track button to add items from participating stores.</p>
+            </div>
+            <div class="step">
+                <img src="{{url_for('static',filename='images/third1.svg')}}" alt="Notification Icon">
+                <h2>3. Get price drop notifications</h2>
+                <p>If we detect price drops, we’ll let you know.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

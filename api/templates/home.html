@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alertio</title>
+ <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}"> 
+</head>
+<body>
+  <div class="container">
+    <div class="logo-line">
+      <!-- <img src="bell2-removebg-preview.png" alt="Bell Icon" class="bell-icon" /> -->
+       <img src="{{ url_for('static', filename='images/bell2-removebg-preview.png') }}" alt="Bell Icon">
+      <h1 class="brand-name">Alertio</h1>
+    </div>
+    <div class="price-drop">₹<span class="arrow">↓</span></div>
+   <a href="{{url_for('index1')}}"><button class="get-started">Get Started</button></a>
+  </div>
+</body>
+</html>

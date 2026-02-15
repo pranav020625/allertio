@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e60000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    color: white;
+  }
+  
+  .logo-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .bell-icon {
+    width: 200px;
+    height: 200px;
+    animation: shake 1s infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(15deg); }
+    30% { transform: rotate(-15deg); }
+    45% { transform: rotate(10deg); }
+    60% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .brand-name {
+    font-size: 100px;
+    margin: 0;
+  }
+  
+  .price-drop {
+    font-size: 36px;
+    margin: 10px 0 30px;
+  }
+  
+  .arrow {
+    font-size: 50px;
+    display: inline-block;
+    color: #00ffea;
+  }
+  
+  .get-started {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: white;
+    color: #e60000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .get-started:hover {
+    background-color:#ffd6d6;
+  }
+  .arrow {
+    display: inline-block;
+    animation: moveDown 1s infinite;
+  }
+  
+  @keyframes moveDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(10px); }
+    100% { transform: translateY(0);}
+  }
